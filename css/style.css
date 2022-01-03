@@ -12,40 +12,109 @@ html {
 body {
   font-family: "Nunito", sans-serif;
   font-weight: 300;
-  line-height: 1.6; }
+  line-height: 1.6;
+  background-color: #358fc4; }
 
-.header {
-  display: flex;
-  align-items: center;
-  height: 15rem;
-  background-color: grey; }
-  .header__frame {
-    height: 15rem; }
-    .header__frame > img {
-      height: 100%; }
-  .header__title {
-    font-size: 5rem; }
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50rem; }
 
-.details {
-  margin: 2rem 0 2rem 0;
-  background-color: #eee;
-  display: flex;
-  justify-content: space-evenly; }
-
-.detail {
-  height: 14rem;
-  width: 16rem;
-  background-color: #658bd3;
-  margin: 1rem;
+.left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
-  .detail__info {
-    font-size: 3rem;
+  justify-content: space-evenly;
+  color: white;
+  background-color: #358fc4; }
+  .left__location {
+    display: flex;
+    align-items: center;
+    width: 30rem; }
+    .left__location--title {
+      font-size: 5rem; }
+  .left__icon {
+    height: 3rem;
+    width: 10rem;
+    fill: white; }
+  .left__date {
+    width: 30rem;
+    padding-left: 10rem; }
+    .left__date--title {
+      font-size: 2.5rem;
+      width: 20rem;
+      font-weight: 100; }
+  .left__temperature {
+    width: 30rem; }
+  .left__temp-cont {
+    display: flex;
+    align-items: center; }
+  .left__temp {
+    height: 5rem;
+    width: 10rem;
+    fill: #ff7b00; }
+  .left__temperature--main {
+    font-size: 8rem; }
+  .left__temperature--feels {
+    padding-left: 10rem;
+    font-size: 2.5rem;
+    font-weight: 100; }
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #358fc4; }
+  .middle__logo {
+    height: 41.5rem; }
+  .middle__text {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 100; }
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #358fc4; }
+  .right__list {
+    list-style: none; }
+  .right__list-item {
+    display: flex;
+    align-items: center;
+    height: 6rem; }
+  .right__text {
+    font-size: 2.5rem;
+    font-weight: 100;
     color: white; }
-  .detail__title {
-    font-size: 3rem; }
+  .right__logo {
+    height: 4rem;
+    width: 10rem;
+    fill: white; }
+
+.bottom {
+  background-color: #358fc4;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  margin: 2rem auto 4rem auto; }
+  .bottom__week {
+    display: flex;
+    justify-content: space-evenly; }
+  .bottom__day {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .bottom__logo {
+    height: 15rem; }
+  .bottom__temp {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 1rem; }
+  .bottom__text {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 100;
+    padding-bottom: 2rem; }
 
 .input {
   background-color: grey;

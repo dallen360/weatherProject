@@ -1,0 +1,58 @@
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+
+  background-color: rgb(53, 143, 196);
+  &__location {
+    display: flex;
+    align-items: center;
+    width: 30rem;
+
+    &--title {
+      font-size: 5rem;
+    }
+  }
+
+  &__icon {
+    height: 3rem;
+    width: 10rem;
+    fill: white;
+  }
+
+  &__date {
+    width: 30rem;
+    padding-left: 10rem;
+    &--title {
+      font-size: 2.5rem;
+      width: 20rem;
+      font-weight: 100;
+    }
+  }
+
+  &__temperature {
+    width: 30rem;
+  }
+
+  &__temp-cont {
+    display: flex;
+    align-items: center;
+  }
+
+  &__temp {
+    height: 5rem;
+    width: 10rem;
+    fill: rgb(255, 123, 0);
+  }
+  &__temperature--main {
+    font-size: 8rem;
+  }
+
+  &__temperature--feels {
+    padding-left: 10rem;
+    font-size: 2.5rem;
+    font-weight: 100;
+  }
+}

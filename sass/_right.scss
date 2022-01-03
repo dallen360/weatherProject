@@ -1,0 +1,28 @@
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(53, 143, 196);
+  &__list {
+    list-style: none;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    height: 6rem;
+  }
+
+  &__text {
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: white;
+  }
+
+  &__logo {
+    height: 4rem;
+    width: 10rem;
+    fill: white;
+  }
+}
