@@ -18,16 +18,16 @@
           <h1 class="left__location--title">Seattle</h1>
         </div>
         <div class="left__date">
-          <h2 class="left__date--title">January 3rd Monday</h2>
+          <h2 class="left__date--title">Monday, January 3, 2022</h2>
         </div>
         <div class="left__temperature">
+          <svg class="left__temp">
+            <use xlink:href="images/sprite.svg#icon-fire"></use>
+          </svg>
           <div class="left__temp-cont">
-            <svg class="left__temp">
-              <use xlink:href="images/sprite.svg#icon-fire"></use>
-            </svg>
-            <h1 class="left__temperature--main">20&deg;</h1>
+            <h1 class="left__temperature--main">45&deg;</h1>
+            <h1 class="left__temperature--feels">Feels like 42&deg;</h1>
           </div>
-          <h1 class="left__temperature--feels">Feels like 22&deg;</h1>
         </div>
       </section>
 
@@ -42,7 +42,7 @@
             <svg class="right__logo">
               <use xlink:href="images/sprite.svg#icon-sun"></use>
             </svg>
-            <h3 class="right__text">sunrise 7:00</h3>
+            <h3 class="right__text" id="sunrise">sunrise 7:00</h3>
           </li>
           <li class="right__list-item">
             <svg class="right__logo">
@@ -50,32 +50,32 @@
                 xlink:href="images/sprite.svg#icon-brightness-contrast"
               ></use>
             </svg>
-            <h3 class="right__text">sunset 4:00</h3>
+            <h3 class="right__text" id="sunset">sunset 4:00</h3>
           </li>
           <li class="right__list-item">
             <svg class="right__logo">
               <use xlink:href="images/sprite.svg#icon-droplet"></use>
             </svg>
-            <h3 class="right__text">60%</h3>
+            <h3 class="right__text" id="humminty">62%</h3>
             <!-- humminty -->
           </li>
           <li class="right__list-item">
             <svg class="right__logo">
               <use xlink:href="images/sprite.svg#icon-cloud"></use>
             </svg>
-            <h3 class="right__text">11.9 mph</h3>
+            <h3 class="right__text" id="wind">11.9 mph</h3>
           </li>
           <li class="right__list-item">
             <svg class="right__logo">
               <use xlink:href="images/sprite.svg#icon-feed"></use>
             </svg>
-            <h3 class="right__text">North-East</h3>
+            <h3 class="right__text" id="direction">North-East</h3>
           </li>
           <li class="right__list-item">
             <svg class="right__logo">
               <use xlink:href="images/sprite.svg#icon-arrow-up2"></use>
             </svg>
-            <h3 class="right__text">1009.0 mb</h3>
+            <h3 class="right__text" id="pressure">1009.0 mb</h3>
             <!-- pressure -->
           </li>
         </ul>
@@ -85,38 +85,73 @@
     <section class="bottom">
       <div class="bottom__week">
         <div class="bottom__day">
-          <img class="bottom__logo" src="/images/sunCloud.png" alt="" />
-          <h2 class="bottom__temp">+20</h2>
+          <img
+            class="bottom__logo"
+            id="day1Pic"
+            src="/images/sunCloud.png"
+            alt=""
+          />
+          <h2 class="bottom__temp" id="day1">45&deg;</h2>
           <h2 class="bottom__text">Sunday</h2>
         </div>
         <div class="bottom__day">
-          <img class="bottom__logo" src="/images/sunCloud.png" alt="" />
-          <h2 class="bottom__temp">+20</h2>
+          <img
+            class="bottom__logo"
+            id="day2Pic"
+            src="/images/sunny.png"
+            alt=""
+          />
+          <h2 class="bottom__temp" id="day2">60&deg;</h2>
           <h2 class="bottom__text">Monday</h2>
         </div>
         <div class="bottom__day">
-          <img class="bottom__logo" src="/images/sunCloud.png" alt="" />
-          <h2 class="bottom__temp">+20</h2>
+          <img
+            class="bottom__logo"
+            id="day3Pic"
+            src="/images/sunny.png"
+            alt=""
+          />
+          <h2 class="bottom__temp" id="day3">63&deg;</h2>
           <h2 class="bottom__text">Tuesday</h2>
         </div>
         <div class="bottom__day">
-          <img class="bottom__logo" src="/images/sunCloud.png" alt="" />
-          <h2 class="bottom__temp">+20</h2>
+          <img
+            class="bottom__logo"
+            id="day4Pic"
+            src="/images/sunCloud.png"
+            alt=""
+          />
+          <h2 class="bottom__temp" id="day4">36&deg;</h2>
           <h2 class="bottom__text">Wednesday</h2>
         </div>
         <div class="bottom__day">
-          <img class="bottom__logo" src="/images/sunCloud.png" alt="" />
-          <h2 class="bottom__temp">+20</h2>
+          <img
+            class="bottom__logo"
+            id="day5Pic"
+            src="/images/sunCloud.png"
+            alt=""
+          />
+          <h2 class="bottom__temp" id="day5">39&deg;</h2>
           <h2 class="bottom__text">Thursday</h2>
         </div>
         <div class="bottom__day">
-          <img class="bottom__logo" src="/images/sunCloud.png" alt="" />
-          <h2 class="bottom__temp">+20</h2>
+          <img
+            class="bottom__logo"
+            id="day6Pic"
+            src="/images/sunny.png"
+            alt=""
+          />
+          <h2 class="bottom__temp" id="day6">41&deg;</h2>
           <h2 class="bottom__text">Friday</h2>
         </div>
         <div class="bottom__day">
-          <img class="bottom__logo" src="/images/sunCloud.png" alt="" />
-          <h2 class="bottom__temp">+20</h2>
+          <img
+            class="bottom__logo"
+            id="day7Pic"
+            src="/images/sunny.png"
+            alt=""
+          />
+          <h2 class="bottom__temp" id="day7">50&deg;</h2>
           <h2 class="bottom__text">Saturday</h2>
         </div>
       </div>
