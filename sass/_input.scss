@@ -1,0 +1,29 @@
+.input {
+  background-color: grey;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__input {
+    width: 20rem;
+    height: 3rem;
+    outline: none;
+    font-size: 2rem;
+    margin: 2rem 0 2rem 0;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+
+  &__button {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background-color: #eee;
+    border-radius: 2rem;
+    margin: 0 0 2rem 0;
+  }
+}
