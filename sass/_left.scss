@@ -43,6 +43,7 @@
   }
 
   &__temp-cont {
+    grid-column: 2 / 4;
     display: flex;
     flex-direction: column;
   }
